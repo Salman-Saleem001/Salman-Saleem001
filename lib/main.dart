@@ -1,23 +1,26 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:pearl_book/Screens/Error_Screen.dart';
+import 'package:pearl_book/Screens/Login.dart';
+import 'package:pearl_book/Screens/Onboarding.dart';
 import 'package:pearl_book/Screens/Splash_Screen.dart';
+import 'package:pearl_book/test/PageViiewTest.dart';
 
 void main()
 {
  runApp(Home());
 }
 class Home extends StatelessWidget {
-  const Home({Key? key}) : super(key: key);
+
+   Home({Key? key}) : super(key: key);
+
+
 
   @override
   Widget build(BuildContext context) {
-    return ScreenUtilInit(
-      designSize: const Size(375, 812),
-      builder:()=> MaterialApp(
+    return  MaterialApp(
         debugShowCheckedModeBanner: false,
         title: 'Pearl Book',
-        home: splash_screen(),
-      ),
+        home: LoginScreen(),
     );
   }
 }

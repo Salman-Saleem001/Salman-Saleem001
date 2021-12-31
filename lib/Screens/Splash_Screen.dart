@@ -19,7 +19,7 @@ class _splash_screenState extends State<splash_screen> {
   _navigatetohome()async
   {
     await(Future.delayed(Duration(milliseconds: 3000)));
-    Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>onboarding()));
+    Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>Onboarding()));
   }
   Widget build(BuildContext context) {
     return SafeArea(
